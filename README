@@ -1,0 +1,48 @@
+# Social Media API
+
+A simple social media API built with Django REST Framework, providing endpoints for users, posts, comments, and following functionality.
+
+## Features
+
+- **User Management:** Create, retrieve, list, and follow users.
+- **Post Management:** Create, retrieve, and list posts.
+- **Comment Management:** Create, retrieve, and list comments on posts.
+- **Following:** Follow and unfollow other users.
+- **Authentication:** Secure endpoints using JSON Web Tokens (JWT).
+
+## Installation and Setup
+
+1. **Clone the Repository:**
+   ```bash
+   git clone <repository-url>
+   cd <repository-name>
+
+2. **Create a Virtual Environment (Optional but Recommended):**
+
+   I chose to use conda but python venv also works.
+
+   conda create -n "environment_name" python=3.10
+
+3. **Install Dependencies:**
+
+   pip install -r requirements.txt
+
+4. **Apply Migrations:**
+
+   python manage.py migrate
+
+5. **Create a Superuser (for Django Admin)**
+
+   python manage.py createsuperuser
+
+**Running the Development Server**
+
+   python manage.py runserver
+
+**Check swagger to execute endpoints more clearly.**
+
+   (http://localhost:8000/swagger/)
+
+**Run tests**
+
+   python manage.py test
